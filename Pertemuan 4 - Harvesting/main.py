@@ -24,6 +24,20 @@ def main():
     # Menyimpan konten suatu URL ke dalam file
     url = 'http://google.com'
     file_simpan_konten_url = '../Resources/konten_url_2.html'
-    belajar.simpan_konten_url(url,file_simpan_konten_url)
+    belajar.simpan_konten_url(url, file_simpan_konten_url)
 
+    # Coba menghubungkan ke database
+    # Kedua baris pemanggilan fungsi dibawah akan menghasilkan output yang sama
+    # hanya penulisannya saja yang berbeda.
+    db = belajar.konek_mysql('belajar_data_science')
+    db = belajar.konek_mysql(nama_db='belajar_data_science')
+
+    # Menambahkan 1 baris baru ke table
+    # belajar.tambah_mahasiswa(koneksi=db, nama='Ayam Krispi', telepon='0817373')
+
+    # Mengedit data di table
+    # belajar.edit_mahasiswa(db, nim=2, nama='Ayam Asam Manis',telepon='0000')
+
+    # Menghapus data di table
+    belajar.delete_mahasiswa(db, nim=2)
 main()

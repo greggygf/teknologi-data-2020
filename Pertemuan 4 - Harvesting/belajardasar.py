@@ -1,6 +1,8 @@
 from os import path # untuk mengecek file
 from urllib.request import urlopen # Untuk terhubung ke internet
 import ssl
+import mysql.connector # Harus dipasang dulu drivernya di project kita
+from mysql.connector.connection import MySQLConnection
 
 class BelajarDasar(object):
 
@@ -82,4 +84,73 @@ class BelajarDasar(object):
     # ----------------------
 
     # 1. Menginstall library library database
-    #    Untuk konek ke database diperlukan suatu driver, yaitu software pihak ketiga yang menjembatani antara Python
+    #    Untuk konek ke database diperlukan suatu driver, yaitu software pihak ketiga yang menjembatani antara Python dan database yang ingin diakses.
+    #    Masing-masing vendor database, memiliki drivernya sendiri
+    #    Misal MySQL, nama drivernya: mysql.connector
+    #    SQLite beda lagi, SQL Server beda lagi, Oracle juga..
+    #    Driver harus didownload dulu, dan dipasang pada project kita. Jika belum, maka library-nya tidak akan bisa di-impor
+    #    Cara impor: Settings -> Preferences -> Projects -> Project Interpreter -> Tanda [+] -> Cari: mysql-connector -> Install
+    #    Screenshot langkah-langkahnya!
+
+    # 2. Persiapkan koneksi ke server MySQL. Di sana buatlah 1 tabel:
+    #    mahasiswa (nim, nama, telepon)
+    '''     CREATE DATABASE belajar_data_science;
+            USE belajar_data_science;
+            CREATE TABLE mahasiswa
+            (
+                nim INTEGER PRIMARY KEY AUTO_INCREMENT,
+                nama VARCHAR(255),
+                telepon VARCHAR(20)
+            );
+    '''
+
+    # 3. Membuat koneksi ke server MySQL
+    def konek_mysql(self, nama_db: str):
+        # Koneksi dibuat dengan fungsi mysql.connector.connect()
+        # Akan mengembalikan sebuah objek dari class:
+        # mysql.connector.connection.MySQLConnection
+
+        db = mysql.connector.connect(
+            host='localhost',
+            user='root',
+            password='',
+            database=nama_db
+        )
+        print(db)
+        # Objek koneksi ini nantinya selalu digunakan saat melakukan operasi baca/tulis ke database
+        return db
+
+    # 4. Menambahkan data ke tabel
+    #    Import dulu mysql.connector.connection.MySQLConnection terlebih dahulu
+    def tambah_mahasiswa(self, koneksi: MySQLConnection, nama: str, telepon: str):
+        # INSERT INTO mahasiswa (nama, telepon) VALUES ('Greggy', '0000')
+        # Susun SQL (embedded query)
+        sql = "INSERT INTO mahasiswa (nama, telepon) VALUES ('{}', '{}')".format(nama, telepon)
+        # Untuk mengeksekusi SQL tersebut diperlukan cursor
+        # cursor adalah semacam penanda, yang menunjuk ke tabel yang sedang diakses saat ini.
+        # Cursor didapat dari objek koneksi.
+        kursor = koneksi.cursor()
+        kursor.execute(sql)
+        # Tanpa 1 baris ini perubahan di db tidak akan diterapkan!
+        koneksi.commit()
+        print('Data berhasil ditambahkan!')
+
+    # 5. Mengubah data ke tabel
+    def edit_mahasiswa(self, koneksi: MySQLConnection, nim: int, nama: str, telepon: str):
+        # UPDATE mahasiswa SET nama = 'Ayam Bakar', telepon = '09999' WHERE nim = 2
+        sql = "UPDATE mahasiswa SET nama = '{}', telepon = '{}' WHERE nim = {}".format(nama, telepon, nim)
+
+        kursor = koneksi.cursor()
+        kursor.execute(sql)
+        koneksi.commit()
+        print('Data berhasil diedit!')
+
+    # 6. Menghapus data dari tabel
+    def delete_mahasiswa(self, koneksi: MySQLConnection, nim: int):
+        # DELETE FROM mahasiswa WHERE nim = ...
+        sql = "DELETE FROM mahasiswa WHERE nim = {}".format(nim)
+
+        kursor = koneksi.cursor()
+        kursor.execute(sql)
+        koneksi.commit()
+        print('Data berhasil dihapus!')
