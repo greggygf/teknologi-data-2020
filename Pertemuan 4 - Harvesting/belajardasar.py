@@ -154,3 +154,26 @@ class BelajarDasar(object):
         kursor.execute(sql)
         koneksi.commit()
         print('Data berhasil dihapus!')
+
+    # 7. Membaca data (SELECT) dari tabel
+    def pilih_mahasiswa(self, koneksi: MySQLConnection, where: str = None): # default parameter value, artinya parameter 'where' tersebut boleh diisi ataupun tidak diisi.
+        # Siapkan dulu SQL
+        sql = "SELECT * FROM mahasiswa"
+        if where is not None:
+            sql += " WHERE {}".format(where)
+
+        # Eksekusi lewat kursor
+        kursor = koneksi.cursor()
+        kursor.execute(sql)
+        # Tidak perlu menggunakan commit, karena hanya membaca data bukan mengubah data.
+        # Yang perlu adalah fetchall()
+        data = kursor.fetchall()
+        '''
+        [
+            0 => [1, 'Adi', '1010931'],
+            1 => [2, 'Budi', '0283823'],
+            ...
+            dst
+        ]
+        '''
+        return data

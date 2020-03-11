@@ -33,11 +33,22 @@ def main():
     db = belajar.konek_mysql(nama_db='belajar_data_science')
 
     # Menambahkan 1 baris baru ke table
-    # belajar.tambah_mahasiswa(koneksi=db, nama='Ayam Krispi', telepon='0817373')
+    belajar.tambah_mahasiswa(koneksi=db, nama='Ayam Krispi', telepon='0817373')
 
     # Mengedit data di table
     # belajar.edit_mahasiswa(db, nim=2, nama='Ayam Asam Manis',telepon='0000')
 
     # Menghapus data di table
-    belajar.delete_mahasiswa(db, nim=2)
+    # belajar.delete_mahasiswa(db, nim=2)
+
+    # Menampilkan data mahasiswa dari table
+    semua_mahasiswa = belajar.pilih_mahasiswa(koneksi=db)
+    for mahasiswa in semua_mahasiswa:
+        nim = mahasiswa[0]
+        nama = mahasiswa[1]
+        telepon = mahasiswa[2]
+        print('NIM : {}'.format(nim))
+        print('Nama : {}'.format(nama))
+        print('Telepon : {}'.format(telepon))
+
 main()
