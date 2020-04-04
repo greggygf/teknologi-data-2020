@@ -14,8 +14,10 @@ class BelajarDasar(object):
     def cek_file(self, alamat_file:str):
         # Mengecek dilakukan dengan menggunakan fungsi path.exists()
         # Impor os.path
-        print('Mengecek file: {}'.format(alamat_file))
+        print('Menge cek file: {}'.format(alamat_file))
+
         ada = path.exists(alamat_file)
+
         if(ada):
             print('File ada!')
         else:
@@ -92,7 +94,7 @@ class BelajarDasar(object):
     #    Cara impor: Settings -> Preferences -> Projects -> Project Interpreter -> Tanda [+] -> Cari: mysql-connector -> Install
     #    Screenshot langkah-langkahnya!
 
-    # 2. Persiapkan koneksi ke server MySQL. Di sana buatlah 1 tabel:
+    # 2.  . Di sana buatlah 1 tabel:
     #    mahasiswa (nim, nama, telepon)
     '''     CREATE DATABASE belajar_data_science;
             USE belajar_data_science;
