@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a071c39a-3d93-4f0a-b4cc-b4af9b0851f3" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/Pertemuan 11 - Implementasi Regresi Linier/Resources/harga_real_estate.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Pertemuan 11 - Implementasi Regresi Linier/belajarregresilinier.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Pertemuan 11 - Implementasi Regresi Linier/main.py" afterDir="false" />
+=======
+>>>>>>> aeb3b770347718506cddb7239627770fe89b56ed
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Praktikum - Teknologi Data.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Praktikum - Teknologi Data.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
@@ -659,7 +662,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Pertemuan 11 - Implementasi Regresi Linier" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> aeb3b770347718506cddb7239627770fe89b56ed
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -672,7 +679,11 @@
       <recent name="$PROJECT_DIR$/Pertemuan  3 - PBO dan Dasar Harvesting/1_class_sederhana" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.main (2)">
+=======
+  <component name="RunManager" selected="Python.HelloWorld">
+>>>>>>> aeb3b770347718506cddb7239627770fe89b56ed
     <configuration name="HelloWorld" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Praktikum - Teknologi Data" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -694,7 +705,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aplikasi_khs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Praktikum - Teknologi Data" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -702,11 +713,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pertemuan 4 - Aplikasi PBO Sederhana/aplikasi_khs_oop" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pertemuan 4 - Aplikasi PBO Sederhana" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pertemuan 4 - Aplikasi PBO Sederhana/aplikasi_khs_oop/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pertemuan  3 - PBO dan Dasar Harvesting/aplikasi_khs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -715,7 +726,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Praktikum - Teknologi Data" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -723,11 +734,19 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pertemuan 11 - Implementasi Regresi Linier" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pertemuan 11 - Implementasi Regresi Linier/main.py" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pertemuan 4 - Aplikasi PBO Sederhana/aplikasi_khs_oop" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pertemuan 4 - Aplikasi PBO Sederhana/aplikasi_khs_oop/main.py" />
+>>>>>>> aeb3b770347718506cddb7239627770fe89b56ed
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -780,11 +799,18 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python.main (2)" />
+=======
+>>>>>>> aeb3b770347718506cddb7239627770fe89b56ed
         <item itemvalue="Python.HelloWorld" />
         <item itemvalue="Python.main (3)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main (1)" />
+<<<<<<< HEAD
+=======
+        <item itemvalue="Python.aplikasi_khs" />
+>>>>>>> aeb3b770347718506cddb7239627770fe89b56ed
       </list>
     </recent_temporary>
   </component>
@@ -828,10 +854,17 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="697" y="304" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1583894726111" />
+<<<<<<< HEAD
     <state x="1434" y="233" key="FileChooserDialogImpl" timestamp="1586538527594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1434" y="233" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586538527594" />
+=======
+    <state x="790" y="214" key="FileChooserDialogImpl" timestamp="1586316088742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="214" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586316088742" />
+>>>>>>> aeb3b770347718506cddb7239627770fe89b56ed
     <state x="1144" y="245" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1584369414367" />
     <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1587394586550">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -873,15 +906,23 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state width="1897" height="320" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1582684394542" />
+<<<<<<< HEAD
     <state x="724" y="174" width="1007" height="733" key="SettingsEditor" timestamp="1587390905686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="724" y="174" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587390905686" />
+=======
+    <state x="910" y="127" width="1007" height="733" key="SettingsEditor" timestamp="1586316543704">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="910" y="127" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586316543704" />
+>>>>>>> aeb3b770347718506cddb7239627770fe89b56ed
     <state x="521" y="251" width="1007" height="733" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1584600798907" />
     <state x="479" y="175" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1585749273070" />
-    <state x="641" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1584369216239">
-      <screen x="0" y="28" width="1920" height="1052" />
+    <state x="641" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1586315244331">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="641" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586315244331" />
     <state x="641" y="380" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1584369216239" />
     <state x="623" y="258" width="672" height="678" key="search.everywhere.popup" timestamp="1582682985102">
       <screen x="0" y="28" width="1920" height="1052" />
