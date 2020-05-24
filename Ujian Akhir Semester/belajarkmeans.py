@@ -24,7 +24,7 @@ class BelajarKMeans(object):
         print('<<[Memvisualisasikan data dengan Scatter Plot]>>')
         plt.scatter(
             self.data_points['Usia'],  # Sumbu X
-            self.data_points['pendapatan_per_tahun']  # Sumbu Y
+            self.data_points['Pendapatan per Tahun (Rp.)']  # Sumbu Y
         )
         # Mengatur agar titik-titiknya nampak seperti di peta
         plt.xlim(15, 73)
@@ -44,7 +44,7 @@ class BelajarKMeans(object):
         print(data_dgn_cluster)
         plt.scatter(
             data_dgn_cluster['Usia'],
-            data_dgn_cluster['pendapatan_per_tahun'],
+            data_dgn_cluster['Pendapatan per Tahun (Rp.)'],
             c=data_dgn_cluster['Cluster'],  # Memberi warna pada titik
             cmap='inferno'
         )
