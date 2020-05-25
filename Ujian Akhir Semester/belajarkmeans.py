@@ -51,3 +51,19 @@ class BelajarKMeans(object):
         plt.xlim(15, 73)
         plt.ylim(150000000, 2150000000)
         plt.show()
+
+    def scatter_web(self):
+        data_dgn_cluster = self.data_points.copy()
+        data_dgn_cluster["Cluster"] = self.hasil_cluster
+        fig = plt.figure() # Membuat objek gambar, namun belum dalam bentuk png.
+        plt.scatter(
+            data_dgn_cluster['Usia'],
+            data_dgn_cluster['Pendapatan per Tahun (Rp.)'],
+            c=data_dgn_cluster['Cluster'],  # Memberi warna pada titik
+            cmap='inferno'
+        )
+        plt.xlim(15, 73)
+        plt.ylim(150000000, 2150000000)
+        plt.xlabel('Usia')
+        plt.ylabel('Pendapatan per tahun')
+        return fig
